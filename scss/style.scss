@@ -1,0 +1,97 @@
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+$font-family: "Poppins", sans-serif;
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $red;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height: 100vh;
+}
+
+.container {
+  width: 1110px;
+  height: 560px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.presentation {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 32px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+
+  &__try-it {
+    background-color: $blue;
+    color: white;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  &__container {
+    background-color: white;
+    height: 85%;
+    border-radius: 10px;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    margin: 40px;
+  }
+
+  &__first-name,
+  &__last-name,
+  &__email,
+  &__submit {
+    height: 50px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10vh;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}

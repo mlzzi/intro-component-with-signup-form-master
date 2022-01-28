@@ -1,0 +1,69 @@
+:root {
+  font-family: "Poppins", sans-serif; }
+
+body {
+  background-color: #ff7a7a;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height: 100vh; }
+
+.container {
+  width: 1110px;
+  height: 560px;
+  display: flex;
+  justify-content: space-between; }
+
+.presentation {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .presentation__title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700; }
+  .presentation__text {
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 32px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%; }
+  .form__try-it {
+    background-color: #6055a5;
+    color: white;
+    height: 60px;
+    border: none;
+    border-radius: 10px; }
+  .form__container {
+    background-color: white;
+    height: 85%;
+    border-radius: 10px; }
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    margin: 40px; }
+  .form__first-name, .form__last-name, .form__email, .form__submit {
+    height: 50px; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10vh; }
+  .attribution a {
+    color: #3e52a3; }
+
+/*# sourceMappingURL=style.css.map */
