@@ -41,23 +41,72 @@ main {
   justify-content: space-between;
   width: 49%; }
   .form__try-it {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
     background-color: #6055a5;
     color: white;
     height: 60px;
     border: none;
-    border-radius: 10px; }
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(62, 60, 73, 0.25); }
+    .form__try-it span {
+      font-weight: 600; }
+    .form__try-it:hover {
+      cursor: pointer; }
+    .form__try-it:active {
+      transform: translateY(4px);
+      box-shadow: 0px 4px 0px 0px rgba(62, 60, 73, 0.25);
+      transition: 100ms; }
   .form__container {
     background-color: white;
     height: 85%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px 0px rgba(62, 60, 73, 0.25); }
   .form__inputs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
+    height: 76%;
     margin: 40px; }
-  .form__first-name, .form__last-name, .form__email, .form__submit {
-    height: 50px; }
+  .form__first-name, .form__last-name, .form__email, .form__password, .form__submit {
+    height: 54px; }
+  .form__first-name, .form__last-name, .form__email, .form__password {
+    border: 1px solid #b9b6d3;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-left: 30px;
+    outline: none; }
+    .form__first-name:focus, .form__last-name:focus, .form__email:focus, .form__password:focus {
+      border: 1px solid #3e3c49; }
+      .form__first-name:focus::placeholder, .form__last-name:focus::placeholder, .form__email:focus::placeholder, .form__password:focus::placeholder {
+        color: #3e3c49; }
+  .form__submit {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #38cc8c;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px 0px rgba(38, 136, 93, 0.7); }
+    .form__submit:hover {
+      cursor: pointer; }
+    .form__submit:active {
+      transform: translateY(2.5px);
+      box-shadow: 0px 2.5px 0px 0px rgba(38, 136, 93, 0.7);
+      transition: 100ms; }
+  .form__terms {
+    text-align: center;
+    color: #b9b6d3;
+    font-weight: 600;
+    font-size: 11.2px;
+    margin-top: -16px; }
+    .form__terms a {
+      color: #ff7a7a;
+      text-decoration: none;
+      font-weight: 700; }
+      .form__terms a:hover {
+        cursor: pointer; }
 
 .attribution {
   font-size: 11px;
