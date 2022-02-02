@@ -33,7 +33,7 @@ function checkInputs() {
     setErrorFor(email, "Email name cannot be empty");
     document.getElementById("email").placeholder = "";
   } else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Not a valid email");
+    setErrorFor(email, "Looks like this is not an email");
     document.getElementById("email").value = "";
     document.getElementById("email").placeholder = "exemple@site.com";
   } else {
