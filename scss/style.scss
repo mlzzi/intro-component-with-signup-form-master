@@ -11,7 +11,16 @@ $font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
+@mixin for-mobile-only {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 body {
+  @include for-mobile-only {
+    background-image: url("../images/bg-intro-mobile.png");
+  }
   background-color: $red;
   background-image: url("../images/bg-intro-desktop.png");
   background-repeat: no-repeat;
@@ -19,14 +28,24 @@ body {
 }
 
 main {
+  @include for-mobile-only {
+    width: 375px;
+    height: 1000px;
+    margin: 0 auto;
+  }
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 99vw;
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .container {
+  @include for-mobile-only {
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateY(-5vh);
+  }
   width: 1110px;
   min-height: 560px;
   max-height: 620px;
@@ -35,18 +54,31 @@ main {
 }
 
 .presentation {
+  @include for-mobile-only {
+    height: 50%;
+    width: fit-content;
+    text-align: center;
+  }
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   &__title {
+    @include for-mobile-only {
+      font-size: 30px;
+      margin-top: 10px;
+      line-height: 35px;
+    }
     color: white;
     font-size: 50px;
     font-weight: 700;
   }
 
   &__text {
+    @include for-mobile-only {
+      margin: 30px 0;
+    }
     color: white;
     font-size: 16px;
     line-height: 26px;
@@ -55,6 +87,12 @@ main {
 }
 
 .form {
+  @include for-mobile-only {
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    justify-content: stretch;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,6 +100,12 @@ main {
   min-height: 560px;
 
   &__try-it {
+    @include for-mobile-only {
+      margin-top: 40px;
+      padding: 20px 50px;
+      font-size: 16px;
+      height: 200px;
+    }
     font-family: $font-family;
     font-size: 15px;
     background-color: $blue;
@@ -85,6 +129,10 @@ main {
   }
 
   &__container {
+    @include for-mobile-only {
+      min-height: 440px;
+      margin-bottom: 30px;
+    }
     background-color: white;
     min-height: 85%;
     border-radius: 10px;
@@ -92,6 +140,9 @@ main {
   }
 
   &__inputs {
+    @include for-mobile-only {
+      margin: 18px 22px;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,7 +151,7 @@ main {
   }
 
   &__control {
-    height: 54px;
+    height: 56px;
     position: relative;
 
     & input {
@@ -162,6 +213,11 @@ main {
   }
 
   &__terms {
+    @include for-mobile-only {
+      margin: 0 40px;
+      line-height: 20px;
+      transform: translateY(-7px);
+    }
     text-align: center;
     color: $grayish-blue;
     font-weight: 600;
@@ -202,6 +258,10 @@ main {
 }
 
 .attribution {
+  @include for-mobile-only {
+    margin: 0 auto;
+    transform: translateY(-3vh);
+  }
   font-size: 11px;
   text-align: center;
   margin-top: -3vh;

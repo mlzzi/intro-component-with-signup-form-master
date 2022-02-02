@@ -6,13 +6,21 @@ body {
   background-image: url("../images/bg-intro-desktop.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 768px) {
+    body {
+      background-image: url("../images/bg-intro-mobile.png"); } }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 99vw;
-  height: 100vh; }
+  width: 100vw;
+  min-height: 100vh; }
+  @media (max-width: 768px) {
+    main {
+      width: 375px;
+      height: 1000px;
+      margin: 0 auto; } }
 
 .container {
   width: 1110px;
@@ -20,21 +28,39 @@ main {
   max-height: 620px;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: space-around;
+      transform: translateY(-5vh); } }
 
 .presentation {
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 768px) {
+    .presentation {
+      height: 50%;
+      width: fit-content;
+      text-align: center; } }
   .presentation__title {
     color: white;
     font-size: 50px;
     font-weight: 700; }
+    @media (max-width: 768px) {
+      .presentation__title {
+        font-size: 30px;
+        margin-top: 10px;
+        line-height: 35px; } }
   .presentation__text {
     color: white;
     font-size: 16px;
     line-height: 26px;
     margin-top: 32px; }
+    @media (max-width: 768px) {
+      .presentation__text {
+        margin: 30px 0; } }
 
 .form {
   display: flex;
@@ -42,6 +68,12 @@ main {
   justify-content: space-between;
   width: 49%;
   min-height: 560px; }
+  @media (max-width: 768px) {
+    .form {
+      width: 90%;
+      margin: auto;
+      height: 500px;
+      justify-content: stretch; } }
   .form__try-it {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -52,6 +84,12 @@ main {
     border-radius: 10px;
     box-shadow: 0px 8px 0px 0px rgba(62, 60, 73, 0.25);
     margin-bottom: 30px; }
+    @media (max-width: 768px) {
+      .form__try-it {
+        margin-top: 40px;
+        padding: 20px 50px;
+        font-size: 16px;
+        height: 200px; } }
     .form__try-it span {
       font-weight: 600; }
     .form__try-it:hover {
@@ -65,14 +103,21 @@ main {
     min-height: 85%;
     border-radius: 10px;
     box-shadow: 0px 8px 0px 0px rgba(62, 60, 73, 0.25); }
+    @media (max-width: 768px) {
+      .form__container {
+        min-height: 440px;
+        margin-bottom: 30px; } }
   .form__inputs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 80%;
     margin: 40px; }
+    @media (max-width: 768px) {
+      .form__inputs {
+        margin: 18px 22px; } }
   .form__control {
-    height: 54px;
+    height: 56px;
     position: relative; }
     .form__control input {
       display: block;
@@ -125,6 +170,11 @@ main {
     font-size: 11.2px;
     margin-top: -17px;
     height: 30px; }
+    @media (max-width: 768px) {
+      .form__terms {
+        margin: 0 40px;
+        line-height: 20px;
+        transform: translateY(-7px); } }
     .form__terms a {
       color: #ff7a7a;
       text-decoration: none;
@@ -149,6 +199,10 @@ main {
   font-size: 11px;
   text-align: center;
   margin-top: -3vh; }
+  @media (max-width: 768px) {
+    .attribution {
+      margin: 0 auto;
+      transform: translateY(-3vh); } }
   .attribution a {
     color: #3e52a3; }
 
