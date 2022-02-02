@@ -11,8 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,38 +37,48 @@
             <span>Try it free 7 days</span> then $20/mo. thereafter
           </button>
           <div class="form__container">
-            <form action="" class="form__inputs">
-              <input
-                type="text"
-                class="form__first-name"
-                name="fname"
-                placeholder="First Name"
-                value=""
-              />
-              <input
-                type="text"
-                class="form__last-name"
-                name="lname"
-                placeholder="Last Name"
-              />
-              <input
-                type="email"
-                class="form__email"
-                name="email"
-                placeholder="Email Address"
-              />
-              <input
-                type="password"
-                class="form__password"
-                name="password"
-                placeholder="Password"
-              />
-              <input
-                type="button"
-                class="form__submit"
-                name="submit"
-                value="CLAIM YOUR FREE TRIAL"
-              />
+            <form id="form" class="form__inputs">
+              <div class="form__control">
+                <input
+                  type="text"
+                  id="fname"
+                  class="form__first-name"
+                  placeholder="First Name"
+                />
+                <i><img src="./images/icon-error.svg" alt="" /></i>
+                <small>cannot be empty</small>
+              </div>
+              <div class="form__control">
+                <input
+                  type="text"
+                  id="lname"
+                  class="form__last-name"
+                  placeholder="Last Name"
+                />
+                <i><img src="./images/icon-error.svg" alt="" /></i>
+                <small>cannot be empty</small>
+              </div>
+              <div class="form__control">
+                <input
+                  type="text"
+                  id="email"
+                  class="form__email"
+                  placeholder="Email Address"
+                />
+                <i><img src="./images/icon-error.svg" alt="" /></i>
+                <small>cannot be empty</small>
+              </div>
+              <div class="form__control">
+                <input
+                  type="password"
+                  id="password"
+                  class="form__password"
+                  placeholder="Password"
+                />
+                <i><img src="./images/icon-error.svg" alt="" /></i>
+                <small>cannot be empty</small>
+              </div>
+              <button class="form__btn">CLAIM YOUR FREE TRIAL</button>
             </form>
             <p class="form__terms">
               By clicking the button, you are agreeing to our
@@ -88,4 +98,5 @@
       </p>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
