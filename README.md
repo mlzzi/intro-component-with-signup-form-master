@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Repository](https://your-solution-url.com)
-- Live Site URL: [Click](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/mlzzi/intro-component-with-signup-form-master)
+- Live Site URL: [Click](https://mlzzi.github.io/intro-component-with-signup-form-master/)
 
 ## My process
 
